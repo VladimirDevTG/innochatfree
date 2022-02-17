@@ -282,8 +282,8 @@ This script is made by @innomods"""
         self.chats = db.get('InnoChats', 'chats', {})
         self.warns = db.get('InnoChats', 'warns', {})
         self.federations = db.get('InnoChats', 'federations', {})
-        self.flood_timeout = 1
-        self.flood_threshold = 2
+        self.flood_timeout = 4
+        self.flood_threshold = 4
         try:
             self.cache = json.loads(open('als_cache.json', 'r').read())
         except Exception:
